@@ -11,5 +11,12 @@ public class BookService {
     public List<Book> getAllBooks() {
         return bookDAO.getAllBooks();
     }
-}
 
+    public void updateBook(Book book) {
+        bookDAO.updateBook(book);
+    }
+
+    public void deleteBook(int id) {
+        bookDAO.deleteBook(id);
+    }
+}
